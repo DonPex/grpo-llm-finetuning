@@ -1,0 +1,96 @@
+What are the exact coordinates (latitude/longitude) for all sites located in the 'Piemonte' region?
+List the serial numbers for all network elements whose model code is 'XYZ-123' and are located in 'Milan'.
+Show the specific time alarms were acknowledged for 'critical' severity issues raised between 8 AM and 5 PM yesterday.
+Find incident numbers and their creation timestamps for issues categorized as 'Software Bug' affecting 'Service A'.
+Display the proposed repair actions for alarms on 'Device X' that have remained uncleared for more than 48 hours.
+List the IP addresses assigned to network elements whose vendor is 'Vendor B' but are NOT located in the 'Rome' district.
+Show the comments and the user who added them for alarms related to 'Equipment Y' that were updated today.
+What is the trouble ticket status for alarms originating from 'EMS_Beta' with 'major' severity?
+Find the specific configuration item name and the assigned technician for incidents opened via 'Email' last Monday.
+List the names and descriptions of cable segments connecting 'Cabinet Alpha' and 'Cabinet Beta'.
+Show the network address A and B for services associated with 'Customer Z'.
+What is the raw probable cause code for alarms whose description contains the phrase 'link down'?
+Find the 'short description' and 'resolution code' for incidents related to 'Network Element Type C' that were resolved last week.
+List the VPLS ID and associated path names for Ethernet paths currently marked as 'Degraded'.
+Show the shelf name and slot number for cards of type 'Optical Line Card' in equipment 'NE_101'.
+What is the 'correlation ID' for incidents involving 'Business Service P' with an urgency level of 1?
+Find the 'action code' and 'element status' for alarms associated with trouble ticket 'TT789123'.
+List the 'start fault' and 'end fault' timestamps for incidents assigned to the 'Tier 3 Support' group.
+Show the 'domain ID' and 'slogan' for alarm labels triggered by 'High Temperature' conditions.
+What is the 'logical link ID' for mobile PEs named 'PE_Milan_1' with an 'active' status?For incidents related to equipment failures in the 'Naples' district, what was the vendor, model, and serial number of the equipment involved?
+List the IP addresses and associated port codes for network elements located at sites designated as 'Data Center' in the 'Lombardy' region.
+Show the details (name, location) of sites that have network elements from 'Vendor C' which generated critical alarms in the last 7 days.
+What services are potentially affected by active (uncleared) alarms on equipment located at the site 'Central Office Turin'?
+List incidents created in the past month related to services running over cable systems of type 'Submarine'.
+Find the names and models of network elements that are part of Ethernet paths associated with VLAN ID 50 and have a status of 'Active'.
+Show the acknowledgment user and timestamp for alarms related to incidents that have been open for more than 5 days.
+What is the status and location of equipment associated with alarms that have a corresponding trouble ticket marked as 'Work In Progress'?
+List the 'trail name' and 'description' for leased lines connected to equipment located in 'Florence'.
+For network elements with an IP address in the '10.20.30.x' range, list any associated active alarms and their severity.
+Show the parent and child logical link IDs for routes associated with services designated as 'Premium'.
+Find the equipment name, model, and site location for devices associated with alarms acknowledged by 'User_Admin' yesterday.
+List the site name, address, and city for locations hosting equipment involved in incidents with 'High' impact and 'High' urgency.
+What are the names and statuses of Ethernet path sections belonging to paths associated with VPLS ID 999?
+Show the card type and status for cards located in shelves described as 'Main Shelf' within equipment generating 'Loss of Signal' alarms.
+List the incident number, affected service, and resolution details for issues linked to alarms cleared between midnight and 6 AM today.
+Find the PE name and status for mobile PEs associated with topology ID 'MBH_IP_Topo_1'.
+Show the cable system name and type for systems connecting sites 'SITE_X' and 'SITE_Y'.
+What equipment (name, model, vendor) is associated with alarms whose probable cause description is 'Configuration Error'?
+List the service name and provisioning status for services whose network address A corresponds to an IP address assigned to equipment in 'Site Z'.What is the average time (in hours) between an alarm being raised and acknowledged for each severity level ('critical', 'major', 'minor')?
+Count the number of distinct equipment models involved in incidents reported via 'Phone Call' versus 'Web Portal'.
+Which user ID has acknowledged the most critical alarms in the past 30 days?
+Calculate the total duration (in days) of resolved incidents for each category ('Hardware', 'Software', 'Network').
+How many network elements of each type ('Router', 'Switch', 'Firewall') are located in the 'Veneto' region?
+What is the maximum 'repeated count' recorded for any single alarm primary key?
+Count the number of incidents assigned to each assignment group that were resolved within the expected resolution date.
+Find the total number of ports associated with each equipment model.
+For each vendor, what is the percentage of their equipment currently having an active (uncleared) alarm?
+What is the average number of trouble tickets associated with alarms per equipment vendor?
+Count the number of distinct sites experiencing outages each month over the past year.
+What is the average impact score for incidents related to 'Service B'?
+Find the total number of cable segments associated with each cable system type ('Terrestrial', 'Submarine').
+How many unique probable alarm causes are associated with equipment from 'Vendor D'?
+Calculate the average number of assignment changes (reassignments) per incident for each priority level.
+What is the total count of alarms raised per district, broken down by 'critical' severity?
+Find the minimum and maximum time difference between 'time raised' and 'time cleared' for alarms associated with 'Device Type E'.
+How many services have their 'A' network address located in 'Site A' versus 'Site B'?
+Count the number of equipment details records associated with each distinct location short name.
+What is the distribution (count) of network elements based on their element class description?List the top 3 vendors whose equipment has the highest number of critical alarms recorded in the last quarter.
+Show incidents ordered by the duration they remained open (resolved time - created time), longest first, limited to the top 10.
+Find the site with the longest-running currently active alarm (based on time raised).
+List the alarms that were acknowledged more than 6 hours after they were raised, ordered by the delay time (longest first).
+Show the sequence of alarms (ordered by time raised) for 'Equipment Z' during a specific outage period (e.g., between two timestamps).
+Find the top 5 most common 'resolution codes' for incidents related to 'Configuration Items' of type 'Server'.
+List users who have acknowledged alarms, ordered by the average time they take to acknowledge (acknowledgment time - raised time), fastest first.
+Show the equipment models ranked by the number of associated incidents in the last year.
+Find the alarms where the 'time cleared' occurred before the 'time acknowledged', ordered by the time difference.
+List the districts ordered by the total number of currently active critical alarms, highest first.
+Display incidents ordered by the difference between their actual resolution time and expected resolution time (most overdue first).
+Find the network element that experienced the most status changes (based on alarm raised/cleared events) yesterday.
+List the top 10 longest cable segments by synthetic name.
+Show services ordered by the number of associated incidents, highest first.
+Find the alarm types that occur most frequently between midnight and 4 AM.
+List the assignment groups ranked by the average time incidents assigned to them remain open.
+Show the equipment whose associated alarms have the highest average 'repeated count'.
+Find the sites ordered by the time since their last reported outage, most recent first.
+List the 5 users who have commented most frequently on alarms in the past week.
+Display the Ethernet paths ordered by the number of sections they contain.Identify equipment that has generated alarms but has no associated incidents within 24 hours of the alarm.
+Find sites that have equipment from more than three different vendors.
+List alarms that have the same 'probable cause' but different 'specific problem' details.
+Identify incidents that were reopened more than twice and list their associated equipment.
+Find network elements whose IP address falls within a specific subnet (e.g., 192.168.1.0/24) and list their associated site location.
+List services that traverse more than 5 routing hops (based on parent/child relationships).
+Identify alarms that were raised, cleared, and then raised again for the same equipment within a 1-hour window.
+Find incidents where the 'caller' is the same as the 'assigned to' person.
+List equipment whose 'activity status' is 'Active' but has not generated any alarms in the last 90 days.
+Identify cable systems where the connected sites (A and B) are in different regions.
+Find alarms associated with equipment whose serial number is missing or null.
+List incidents whose description contains keywords like 'urgent' or 'critical' but have a low impact/urgency score assigned.
+Identify network elements belonging to a specific topology (e.g., 'WDM Ring 1') and list their current alarm status.
+Find users who acknowledged alarms outside of standard business hours (e.g., 6 PM to 8 AM or weekends).
+List sites with a 'customer' designation that have experienced more than 2 outages in the last month.
+Identify Ethernet paths that have sections involving equipment from different vendors.
+Find incidents that were resolved but have no 'resolution code' assigned.
+List alarms for which a trouble ticket was created (TT ID exists) but the ticket status is still 'New' or 'Open' after 7 days.
+Identify equipment models for which the average time-to-resolve incidents is significantly higher than the overall average.
+Find pairs of alarms (based on primary key or equipment/time proximity) that might indicate a flapping issue (cleared and raised repeatedly).

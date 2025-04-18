@@ -1,0 +1,100 @@
+List all known network sites.
+Show me all the different types of network equipment.
+What are the unique vendor names associated with the equipment?
+Display all recorded incident numbers.
+List the names of all cable systems.
+Show all distinct areas where alarms have occurred.
+What are the different possible severity levels for alarms?
+List all services currently being tracked.
+Display the names of all assignment groups for incidents.
+Show all recorded equipment locations.
+What are the different types of alarms recorded?
+List all known districts.
+Show all unique originating systems for incidents.
+Display the different contact types used for reporting incidents.
+List all equipment models present in the network.
+What are the different statuses recorded for outages?
+Show all unique user IDs that have acknowledged alarms.
+List all available service names.
+Display all customer types associated with incidents.
+Show all card types used in the equipment.
+Find all alarms with critical severity.
+Show incidents that were created yesterday.
+List network equipment located in the 'Milan' district.
+Which alarms are currently in an 'acknowledged' state?
+Find incidents assigned to the 'Network Operations' group.
+Show sites located in the 'Lazio' region.
+List all alarms raised for device type 'Router'.
+Which incidents have an impact level greater than 3?
+Find equipment manufactured by 'Vendor A'.
+Show alarms that are currently active (not cleared).
+List incidents related to the 'Fiber Cut' category.
+Which sites are designated as 'POP' type?
+Find alarms specifically related to 'Power Supply Failure'.
+Show incidents where the originating system was 'Monitoring Tool X'.
+List network elements with an 'inactive' activity status.
+Which alarms have associated trouble tickets?
+Find incidents affecting the 'Mobile Data' service.
+Show equipment whose model code starts with 'CISCO'.
+List alarms that occurred within the last 24 hours.
+Which incidents are currently marked as 'in validation'?
+Find outages reported for site ID 'SITE_123'.
+Show alarms acknowledged by user 'john.doe'.
+List services with a 'Provisioned' status.
+Which incidents have a resolution code indicating 'No Fault Found'?
+Find network elements belonging to the 'Core Router' class.
+What incidents are associated with alarms on equipment named 'ROUTER_MILAN_01'?
+List the network elements located at sites in the 'Rome' district.
+Show the IP addresses for all equipment of model 'MODEL_XYZ'.
+For each critical alarm, show its description and the equipment involved.
+List the incidents and the specific configuration item associated with them.
+Show the cable systems connected to site 'SITE_A'.
+What are the details (like model, vendor) of the equipment associated with alarm ID 5678?
+List all active alarms and the trouble ticket ID associated with each, if any.
+Show the services that run over cable system 'CS_WEST'.
+For incidents assigned to 'jane.smith', list their descriptions and affected services.
+List equipment details along with their associated IP address.
+Show the start time of outages along with the site name and city.
+What type of equipment is located at the site named 'Central Office Rome'?
+List alarms along with their corresponding label or slogan.
+Show the Ethernet paths associated with VLAN ID 100.
+Find the location (site name, address) for network element 'NE_456'.
+List incidents and the user who last updated them.
+Show the segments belonging to the 'Undersea Cable 1' system.
+What is the status of the equipment associated with unresolved incidents?
+List the alarms and the vendor of the equipment raising the alarm.
+How many alarms are currently open (not cleared)?
+What is the total number of incidents recorded?
+Count the number of network elements per vendor.
+How many distinct sites are there in the 'Tuscany' region?
+What is the average number of assignments per incident?
+Count the number of alarms for each severity level.
+How many incidents were closed last month?
+What is the total count of equipment for each model type?
+Count the number of active outages.
+How many alarms originated from the 'EMS_Alpha' system?
+What's the total number of cable segments recorded?
+Count incidents based on their current status.
+How many sites are associated with each district?
+What is the maximum reopen count observed for any incident?
+Count the number of network elements by their activity status.
+How many alarms have been acknowledged?
+What is the total number of services?
+Count the number of incidents per category.
+How many pieces of equipment are located at 'Site B'?
+What is the frequency of each probable alarm cause?
+List the 10 most recently raised alarms.
+Show incidents ordered by their creation date, newest first.
+Display network elements ordered alphabetically by their name.
+List alarms ordered by severity (highest first), then by time raised.
+Show sites ordered by city name.
+List the top 5 most frequent alarm types.
+Display incidents ordered by their expected resolution date.
+Show equipment ordered by vendor, then by model.
+List alarms ordered by the time they were cleared, oldest first.
+Show services ordered by name.
+List the incidents with the highest number of reopens first.
+Display alarms ordered by the equipment name.
+Show network elements ordered by location short name.
+List incidents ordered by the last update time, most recent first.
+Display sites ordered by province.
