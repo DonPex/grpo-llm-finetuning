@@ -1,38 +1,3 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 17.0 (Debian 17.0-1.pgdg120+1)
--- Dumped by pg_dump version 17.4 (Ubuntu 17.4-1.pgdg22.04+2)
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET transaction_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
---
--- Name: rawdata; Type: SCHEMA; Schema: -; Owner: mitobi
---
-
-CREATE SCHEMA rawdata;
-
-
-ALTER SCHEMA rawdata OWNER TO mitobi;
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
---
--- Name: alarm; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.alarm (
     id bigint,
@@ -89,26 +54,12 @@ CREATE TABLE rawdata.alarm (
     tt_association_type character varying(250)
 );
 
-
-ALTER TABLE rawdata.alarm OWNER TO mitobi;
-
---
--- Name: alarm_label; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.alarm_label (
     id bigint,
     domain_id character varying(250),
     slogan character varying(250),
     alarmtrigger character varying(250)
 );
-
-
-ALTER TABLE rawdata.alarm_label OWNER TO mitobi;
-
---
--- Name: cable_system; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.cable_system (
     index bigint,
@@ -118,13 +69,6 @@ CREATE TABLE rawdata.cable_system (
     "SITE_A_ID" text,
     "SITE_B_ID" text
 );
-
-
-ALTER TABLE rawdata.cable_system OWNER TO mitobi;
-
---
--- Name: cablesegment; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.cablesegment (
     index bigint,
@@ -137,25 +81,11 @@ CREATE TABLE rawdata.cablesegment (
     "SYNTHETIC_NAME" text
 );
 
-
-ALTER TABLE rawdata.cablesegment OWNER TO mitobi;
-
---
--- Name: cl_clsegm_rel; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.cl_clsegm_rel (
     index bigint,
     "CABLE_SYSTEM_ID" text,
     "CABLE_SEGMENT_ID" text
 );
-
-
-ALTER TABLE rawdata.cl_clsegm_rel OWNER TO mitobi;
-
---
--- Name: equipment_details; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.equipment_details (
     index bigint,
@@ -167,13 +97,6 @@ CREATE TABLE rawdata.equipment_details (
     "DESCRIPTION" text
 );
 
-
-ALTER TABLE rawdata.equipment_details OWNER TO mitobi;
-
---
--- Name: equipment_ip_address; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.equipment_ip_address (
     index bigint,
     "NODE_NAME" text,
@@ -182,13 +105,6 @@ CREATE TABLE rawdata.equipment_ip_address (
     "CODE" text,
     "IP_ADDRESS" text
 );
-
-
-ALTER TABLE rawdata.equipment_ip_address OWNER TO mitobi;
-
---
--- Name: incident; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.incident (
     incident_number character varying(50),
@@ -246,13 +162,6 @@ CREATE TABLE rawdata.incident (
     wfm_id character varying(100)
 );
 
-
-ALTER TABLE rawdata.incident OWNER TO mitobi;
-
---
--- Name: leased_lines; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.leased_lines (
     index bigint,
     "SHORT_NAME" text,
@@ -262,13 +171,6 @@ CREATE TABLE rawdata.leased_lines (
     "CODE" text,
     "DESCRIPTION" text
 );
-
-
-ALTER TABLE rawdata.leased_lines OWNER TO mitobi;
-
---
--- Name: mobile_pe; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.mobile_pe (
     index bigint,
@@ -280,13 +182,6 @@ CREATE TABLE rawdata.mobile_pe (
     "ENTITY_TYPE" text,
     "POSITION" bigint
 );
-
-
-ALTER TABLE rawdata.mobile_pe OWNER TO mitobi;
-
---
--- Name: mobile_peip; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.mobile_peip (
     index bigint,
@@ -300,13 +195,6 @@ CREATE TABLE rawdata.mobile_peip (
     "POSITION" bigint,
     "STATUS" text
 );
-
-
-ALTER TABLE rawdata.mobile_peip OWNER TO mitobi;
-
---
--- Name: network_elements; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.network_elements (
     index bigint,
@@ -325,13 +213,6 @@ CREATE TABLE rawdata.network_elements (
     "LOCATION_SHORT_NAME" text
 );
 
-
-ALTER TABLE rawdata.network_elements OWNER TO mitobi;
-
---
--- Name: outage; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.outage (
     outage_id integer,
     site_id character varying(50),
@@ -343,13 +224,6 @@ CREATE TABLE rawdata.outage (
     longitude numeric(9,6)
 );
 
-
-ALTER TABLE rawdata.outage OWNER TO mitobi;
-
---
--- Name: path_ethernet; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.path_ethernet (
     index bigint,
     "VLAN_ID" bigint,
@@ -358,13 +232,6 @@ CREATE TABLE rawdata.path_ethernet (
     "PATH_ETHERNET_STATUS" text,
     "NAME" text
 );
-
-
-ALTER TABLE rawdata.path_ethernet OWNER TO mitobi;
-
---
--- Name: path_ethernet_serv; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.path_ethernet_serv (
     index bigint,
@@ -376,13 +243,6 @@ CREATE TABLE rawdata.path_ethernet_serv (
     "VLAN_OUT_ID" bigint
 );
 
-
-ALTER TABLE rawdata.path_ethernet_serv OWNER TO mitobi;
-
---
--- Name: ports; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.ports (
     index bigint,
     "NODE_NAME" text,
@@ -391,13 +251,6 @@ CREATE TABLE rawdata.ports (
     "CODE" text,
     "IP_ADDRESS" text
 );
-
-
-ALTER TABLE rawdata.ports OWNER TO mitobi;
-
---
--- Name: raw_alarms; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.raw_alarms (
     "ID" bigint,
@@ -453,13 +306,6 @@ CREATE TABLE rawdata.raw_alarms (
     "TT_ASSOCIATION_TYPE" text
 );
 
-
-ALTER TABLE rawdata.raw_alarms OWNER TO mitobi;
-
---
--- Name: rmm_equipment_details; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.rmm_equipment_details (
     "NETWORK_ELEMENT_NAME" text,
     "NETWORK_ELEMENT_MODEL" text,
@@ -475,13 +321,6 @@ CREATE TABLE rawdata.rmm_equipment_details (
     "CARD_VENDOR_NAME" text
 );
 
-
-ALTER TABLE rawdata.rmm_equipment_details OWNER TO mitobi;
-
---
--- Name: routing; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.routing (
     index bigint,
     "PARENT_LL_ID" text,
@@ -491,13 +330,6 @@ CREATE TABLE rawdata.routing (
     "CHANNEL_IDENTIFIER" bigint,
     "VCI" double precision
 );
-
-
-ALTER TABLE rawdata.routing OWNER TO mitobi;
-
---
--- Name: service; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.service (
     "SERVICE_ID" text,
@@ -519,13 +351,6 @@ CREATE TABLE rawdata.service (
     "DOMAIN" bigint
 );
 
-
-ALTER TABLE rawdata.service OWNER TO mitobi;
-
---
--- Name: sites; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.sites (
     "SITE_ID" text,
     "SITE_NAME" text,
@@ -546,13 +371,6 @@ CREATE TABLE rawdata.sites (
     "PROVINCIA" text
 );
 
-
-ALTER TABLE rawdata.sites OWNER TO mitobi;
-
---
--- Name: synthetic_name_trail; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.synthetic_name_trail (
     "TRANSMEDIA_NAME" text,
     "TRATTA" text,
@@ -561,13 +379,6 @@ CREATE TABLE rawdata.synthetic_name_trail (
     "TRAIL_DESCRIPTION" text,
     "FUNCTION_CODE" text
 );
-
-
-ALTER TABLE rawdata.synthetic_name_trail OWNER TO mitobi;
-
---
--- Name: topology_mbh_ip; Type: TABLE; Schema: rawdata; Owner: mitobi
---
 
 CREATE TABLE rawdata.topology_mbh_ip (
     "VPNL3_ID" double precision,
@@ -585,13 +396,6 @@ CREATE TABLE rawdata.topology_mbh_ip (
     "AREA_OSPF_BLK4" double precision
 );
 
-
-ALTER TABLE rawdata.topology_mbh_ip OWNER TO mitobi;
-
---
--- Name: topology_wdm; Type: TABLE; Schema: rawdata; Owner: mitobi
---
-
 CREATE TABLE rawdata.topology_wdm (
     "TOPOLOGYID" bigint,
     "TOPOLOGY_TYPE" text,
@@ -602,13 +406,6 @@ CREATE TABLE rawdata.topology_wdm (
     "DESCRIPTION" text,
     "LOGICAL_LINK_ID" bigint
 );
-
-
-ALTER TABLE rawdata.topology_wdm OWNER TO mitobi;
-
---
--- Name: v_alarms; Type: VIEW; Schema: rawdata; Owner: mitobi
---
 
 CREATE VIEW rawdata.v_alarms AS
  SELECT a.id AS alarm_id,
@@ -631,108 +428,4 @@ CREATE VIEW rawdata.v_alarms AS
    FROM (rawdata.alarm a
      JOIN rawdata.alarm_label l ON ((a.id = l.id)));
 
-
-ALTER VIEW rawdata.v_alarms OWNER TO mitobi;
-
---
--- Name: VIEW v_alarms; Type: COMMENT; Schema: rawdata; Owner: mitobi
---
-
 COMMENT ON VIEW rawdata.v_alarms IS 'vista contenente i dati di input per i modelli ML di MITO.AI';
-
-
---
--- Name: ix_rawdata_cable_system_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_cable_system_index ON rawdata.cable_system USING btree (index);
-
-
---
--- Name: ix_rawdata_cablesegment_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_cablesegment_index ON rawdata.cablesegment USING btree (index);
-
-
---
--- Name: ix_rawdata_cl_clsegm_rel_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_cl_clsegm_rel_index ON rawdata.cl_clsegm_rel USING btree (index);
-
-
---
--- Name: ix_rawdata_equipment_details_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_equipment_details_index ON rawdata.equipment_details USING btree (index);
-
-
---
--- Name: ix_rawdata_equipment_ip_address_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_equipment_ip_address_index ON rawdata.equipment_ip_address USING btree (index);
-
-
---
--- Name: ix_rawdata_leased_lines_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_leased_lines_index ON rawdata.leased_lines USING btree (index);
-
-
---
--- Name: ix_rawdata_mobile_pe_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_mobile_pe_index ON rawdata.mobile_pe USING btree (index);
-
-
---
--- Name: ix_rawdata_mobile_peip_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_mobile_peip_index ON rawdata.mobile_peip USING btree (index);
-
-
---
--- Name: ix_rawdata_network_elements_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_network_elements_index ON rawdata.network_elements USING btree (index);
-
-
---
--- Name: ix_rawdata_path_ethernet_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_path_ethernet_index ON rawdata.path_ethernet USING btree (index);
-
-
---
--- Name: ix_rawdata_path_ethernet_serv_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_path_ethernet_serv_index ON rawdata.path_ethernet_serv USING btree (index);
-
-
---
--- Name: ix_rawdata_ports_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_ports_index ON rawdata.ports USING btree (index);
-
-
---
--- Name: ix_rawdata_routing_index; Type: INDEX; Schema: rawdata; Owner: mitobi
---
-
-CREATE INDEX ix_rawdata_routing_index ON rawdata.routing USING btree (index);
-
-
---
--- PostgreSQL database dump complete
---
-

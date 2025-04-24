@@ -127,7 +127,7 @@ db_connection_params = {
 }
 
 # Path to your generated JSONL file
-jsonl_file_path = 'data/generated-sql.jsonl'
+jsonl_file_path = 'data/generated_sql_dataset_500.jsonl'
 
 # --- Run the Test ---
 if __name__ == "__main__":

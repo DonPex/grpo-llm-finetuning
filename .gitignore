@@ -2,3 +2,4 @@
 /unsloth_compiled_cache
 /wandb
 /outputs
+grpo_trainer_lora_model/adapter_config.json
